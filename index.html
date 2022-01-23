@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <header class="main-header" id="myHeader">
+        <div class="container">
+            <div class="menu">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction4()">
+                <img src="./1.png" width="26"  alt="imagemenu">
+                    <!-- <i class="fas fa-bars"></i> -->
+                </a>
+            </div>
+            <div class="mh-logo">
+                <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" width="80" height="25" alt="Flexbox.ninja">
+                </a>
+            </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" class="searchInput" placeholder="Search.." name="search">
+                  <i class="searchInputIcon fa fa-search"></i>
+                </form>
+            </div>
+            <!-- <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Our clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav> -->
+            <div class="yticon">
+                <a href="javascript:void(0);" class="yticona" onclick="myFunction1()"><i class="fas fa-grip-horizontal"></i></a>
+            </div>
+            <div class="yticon2">
+                <a href="javascript:void(0);" class="yticona2" onclick="myFunction2()"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+            <div class="signin">
+                <a href="javascript:void(0);" class="signina2" onclick="myFunction3()">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h4>SIGN IN</h4>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="leftmenu">
+        <div class="leftmenus">
+            <ul>
+                <li class="activemenu">     
+                    <i class="fas fa-home" style="margin-right: 2%;"></i>
+                        <a href="#">Home</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-user-circle" style="margin-right: 2%;"></i>
+                        <a href="#">About</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-info-circle" style="margin-right: 2%;"></i>
+                        <a href="#">Service</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="ytarea">
+        <div class="ytareas">
+            <ul>
+                <li class="activemenu">     
+                    <i class="fas fa-home" style="margin-right: 2%;"></i>
+                        <a href="#">Home</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-user-circle" style="margin-right: 2%;"></i>
+                        <a href="#">About</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-info-circle" style="margin-right: 2%;"></i>
+                        <a href="#">Service</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="ytarea2">
+        <div class="ytareas2">
+            <ul>
+                <li class="activemenu">     
+                    <i class="fas fa-home" style="margin-right: 2%;"></i>
+                        <a href="#">Apperence</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-user-circle" style="margin-right: 2%;"></i>
+                        <a href="#">Language</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-info-circle" style="margin-right: 2%;"></i>
+                        <a href="#">Settings</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-info-circle" style="margin-right: 2%;"></i>
+                        <a href="#">Help</a>
+                </li>
+                <li class="">     
+                    <i class="fas fa-info-circle" style="margin-right: 2%;"></i>
+                        <a href="#">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="loading">
+        <div class="loadings"><img src="https://flevix.com/wp-content/uploads/2019/07/Curve-Loading.gif" class="center" alt="loading"></div>
+    </section>
+    
+    <script>
+    function myFunction4() {
+    var x = document.getElementById("leftmenu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+
+    function myFunction1() {
+    var y = document.getElementById("ytarea");
+    if (y.style.display === "block") {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+    }
+
+    function myFunction2() {
+    var y = document.getElementById("ytarea2");
+    if (y.style.display === "block") {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+    }
+
+    function myFunction3() {
+    var y = document.getElementById("loading");
+    if (y.style.display === "block") {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+    }
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+
+</script>
+</body>
+</html>

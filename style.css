@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1% 2%;
+    box-shadow: 2px 1px 5px black;
+    border-radius: 5px;
+    background-color: #fff
+}
+/* <___________________________________________> */
+
+.menu{
+    flex: .4;
+}
+#leftmenu {
+    width: 20%;
+    min-height: 90vh;
+    position: fixed;
+    box-shadow: 0px 4px 4px black;
+    display: none;
+    top: 67px;
+  }
+.leftmenus ul{
+      padding: 0%;
+  }
+.leftmenus ul li{
+      list-style-type: none;
+      padding: 4%;
+      background-color: #fff;
+  }
+.activemenu{
+    background-color: rgb(214, 214, 214) !important;
+  }
+.leftmenus ul li a{
+      text-decoration: none;
+      color: #000;
+  }
+
+/* <___________________________________________> */
+
+/* <___________________________________________> */
+
+
+.search-container{
+    margin-right: 50px;
+    flex: 5;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+.fa-bars{
+    font-size: 25px;
+    color: red;
+}
+
+/* <___________________________________________> */
+
+/* .main-nav-list{
+    text-align: center;
+}
+.main-nav-list li{
+    display: inline;
+    margin: 0 2%;
+}
+.main-nav-list li:hover{
+    background-color: #5f86fd;
+    padding: 1% 0;
+    border-radius: 5px;
+}
+.main-nav-list li a{
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+}
+.main-nav-list li .active{
+    background-color: #5f86fd;
+    color: #fff;
+    padding: 1% 2%;
+    border-radius: 5px;
+} */
+
+
+/* <___________________________________________> */
+.fa-search{
+    font-size: 20px;
+    padding: 1%;
+}
+.searchInput {
+    width: 100%;
+    height: 2rem;
+    padding: 0 1rem; 
+    border-radius: 2rem;
+    /* border: none; */
+    transition: transform 0.1s ease-in-out;
+    border: solid .5px #adadad;
+    
+  }
+
+.searchInputIcon {
+    right: 0.8rem;
+    top: 0.5rem;
+    color: #a1a1a1;
+    transition: all 0.1s ease-in-out;
+  }
+
+/* <___________________________________________> */
+
+.mh-logo{
+    flex: 2;
+}
+/* .main-nav{
+    flex: 5;
+} */
+/* <___________________________________> */
+.yticon{
+    flex:.5;
+}
+.fa-grip-horizontal{
+    font-size: 30px;
+    color: rgb(124, 124, 124);
+  }
+.ytareas ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.ytareas ul li{
+    list-style-type: none;
+    padding: 4%;
+    background-color: #fff;
+}
+.ytareas ul{
+    padding: 0%;
+}
+#ytarea{
+    position: fixed;
+    width: 18%;
+    left: 800px;
+    display: none;
+    box-shadow: 0px 1px 4px black;
+    top: 67px;
+
+}
+/* <___________________________________> */
+
+.yticon2{
+    flex:1;
+    font-size: 20px;
+    align-items: center;
+}
+.fa-ellipsis-v{
+    color: rgb(124, 124, 124);
+}
+.yticon2 a{
+    display: flex;
+}
+.ytareas2 ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.ytareas2 ul li{
+    list-style-type: none;
+    padding: 4%;
+    background-color: #fff;
+}
+.ytareas2 ul{
+    padding: 0%;
+}
+#ytarea2{
+    position: fixed;
+    width: 18%;
+    left: 850px;
+    display: none;
+    box-shadow: 0px 1px 4px black;
+    top: 67px;
+
+}
+
+/* <___________________________________> */
+.signin{
+    flex: 1;
+}
+.signina2{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: solid 1px;
+    padding: 10px;
+}
+.fa-sign-in-alt{
+    margin-right: 15px;
+}
+#loading{
+    display: none;
+
+}
+.center {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+/* <---------------------------------> */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+
+/* <__________________________Responsive Start Here_________________________> */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .search-container{
+        display: none;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
+
+/* <__________________________Responsive End Here_________________________> */
